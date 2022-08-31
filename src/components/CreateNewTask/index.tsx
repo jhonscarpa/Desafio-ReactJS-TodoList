@@ -18,6 +18,8 @@ export function CreateNewTask({ createNewTask }: IPropsCreateNewComment) {
       content: newTextTask,
       finish: false,
     })
+
+    setNewTextTask('')
   }
 
   function handleNewCommentChange(event: ChangeEvent<HTMLInputElement>) {
@@ -37,6 +39,7 @@ export function CreateNewTask({ createNewTask }: IPropsCreateNewComment) {
         placeholder="Adicione uma nova tarefa"
         onChange={handleNewCommentChange}
         required
+        value={newTextTask}
         onInvalid={handleNewCommentInvalid}
       />
       <button>
