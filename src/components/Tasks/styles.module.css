@@ -1,0 +1,71 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container main header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.Container main header .taskCreated {
+  color: var(--blue);
+  font: 700 0.875rem 'Inter', sans-serif;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Container main header .taskFinish {
+  color: var(--purple);
+  font: 700 0.875rem 'Inter', sans-serif;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Container main header span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.125rem 0.5rem;
+}
+
+.contentTasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.noDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.noDataContainer img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.noDataContainer strong {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gray-300);
+}
+.noDataContainer p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-300);
+  text-align: center;
+}
